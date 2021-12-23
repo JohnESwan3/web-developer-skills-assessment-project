@@ -20,10 +20,24 @@
     <title>Web Developer Skills Assessment Project</title>
   </head>
   <body>
+    <!-- Banner - not sure if this should go on all pages or just index -->
+    <header class="banner" id="banner">
+      <h1>
+        <span id="banner-term">Andon</span> :
+        <span id="banner-definition">A visual light used to show...</span>
+      </h1>
+      <!-- Button to bring user to dictionary -->
+      <a href="lean.html" class="link-light btn btn-dark btn-outline-secondary"
+        >See More</a
+      >
+    </header>
+
     <!-- Off-canvas nav -->
     <nav class="navbar navbar-light shadow-sm navbar-dark bg-dark text-white">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">LEAN Study Guide</a>
+        <a class="navbar-brand" href="index.html"
+          >LEAN Study Guide | <i class="fas fa-book"></i
+        ></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -92,6 +106,21 @@
         </div>
       </div>
     </nav>
+
+    <main style="min-height: 100vh"></main>
+
+    <!-- Footer -->
+    <footer class="text-center text-white bg-dark">
+      <!-- Grid container -->
+      <div class="text-center text-secondary p-3">
+        <p>
+          Website By:
+          <a href="https://www.johneswan3.com" style="color: #c13584"
+            >John Swan</a
+          >
+        </p>
+      </div>
+    </footer>
   </body>
   <!-- Bootstrap Bundle -->
   <script

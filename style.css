@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+html {
+  /* max-width: 1920px; */
+  margin: auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-width: 1920px;
+}
+
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #333;
+}
+
+html,
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.jumbotron-text {
+  font-size: 1rem;
+}
+
+.banner {
+  background-color: rgb(2 132 199);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+.banner a {
+  width: auto%;
+  font-size: 0.8rem;
+}
+
+.banner #banner-term {
+  color: white;
+}
+
+.banner h1 {
+  font-size: 1rem;
+}
+.hero {
+  display: flex;
+  justify-content: center;
+}
+.hero img {
+  width: 100%;
+}
+
+.feature-card {
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  padding: 2rem;
+}

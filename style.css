@@ -5,7 +5,6 @@ html {
   margin: auto;
   overflow-y: scroll;
   overflow-x: hidden;
-  max-width: 1920px;
 }
 
 ::-webkit-scrollbar {
@@ -64,4 +63,21 @@ body {
   justify-content: center;
   text-align: left;
   padding: 2rem;
+}
+
+.study-card {
+  height: 20rem;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+footer {
+  height: 3rem;
+  width: 100vw;
+  position: sticky;
+  bottom: 0;
 }

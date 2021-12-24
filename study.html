@@ -17,7 +17,7 @@
       src="https://kit.fontawesome.com/4601448a75.js"
       crossorigin="anonymous"
     ></script>
-    <title>Web Developer Skills Assessment Project</title>
+    <title>WDSAP | Study</title>
   </head>
   <body>
     <!-- Banner - not sure if this should go on all pages or just index -->
@@ -78,28 +78,8 @@
               <li class="nav-item">
                 <a class="nav-link" href="quiz.html">Quiz</a>
               </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="offcanvasNavbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Dictionary
-                </a>
-                <ul
-                  class="dropdown-menu bg-dark navbar-dark border-0"
-                  aria-labelledby="offcanvasNavbarDropdown"
-                >
-                  <li class="nav-item">
-                    <a class="nav-link" href="lean.html">LEAN</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="wastes.html">8 Wastes</a>
-                  </li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="dictionary.html">Dictionary</a>
               </li>
             </ul>
           </div>
@@ -107,12 +87,110 @@
       </div>
     </nav>
 
-    <main style="min-height: 100vh"></main>
+    <main
+      class="
+        flex-column
+        justify-content-center
+        align-content-center
+        text-center
+      "
+      style="min-height: 100vh"
+    >
+      <section
+        class="container-fluid p-4 bg-white"
+        style="
+          height: 100vh;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          max-width: 1200px;
+        "
+      >
+        <div class="text-center">
+          <h1>Pick A Topic</h1>
+        </div>
+        <div class="row pt-4">
+          <!-- LEAN Card -->
+          <div class="col-md-4">
+            <div class="card">
+              <div
+                class="
+                  card-body
+                  bg-light
+                  shadow-lg
+                  text-dark
+                  outline-primary
+                  rounded-3
+                  study-card
+                "
+              >
+                <h1>LEAN</h1>
+
+                <a
+                  href="quiz.html"
+                  class="link-light btn btn-dark btn-outline-secondary"
+                  >Take A Quiz</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- 8 Wastes Card -->
+          <div class="col md-4">
+            <div class="card">
+              <div
+                class="
+                  card-body
+                  bg-light
+                  shadow-lg
+                  text-dark
+                  outline-primary
+                  rounded-3
+                  study-card
+                "
+              >
+                <h1>8 Wastes</h1>
+
+                <a
+                  href="study.html"
+                  class="link-light btn btn-dark btn-outline-secondary"
+                  >Try the Cards</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Custom Card -->
+          <div class="col-md-4">
+            <div class="card">
+              <div
+                class="
+                  card-body
+                  bg-light
+                  shadow-lg
+                  text-dark
+                  outline-primary
+                  rounded-3
+                  study-card
+                "
+              >
+                <h1>Custom</h1>
+
+                <a
+                  href="lean.html"
+                  class="link-light btn btn-dark btn-outline-secondary"
+                  >Try the Cards</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- Footer -->
     <footer class="text-center text-white bg-dark">
       <!-- Grid container -->
-      <div class="text-center text-secondary p-3">
+      <div class="text-center text-secondary flex-column">
         <p>
           Website By:
           <a href="https://www.johneswan3.com" style="color: #c13584"

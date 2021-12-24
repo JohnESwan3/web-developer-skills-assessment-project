@@ -22,6 +22,9 @@ body {
   margin: 0;
   padding: 0;
 }
+main {
+  min-height: 100vh;
+}
 
 .jumbotron-text {
   font-size: 1rem;
@@ -80,4 +83,59 @@ footer {
   width: 100vw;
   position: sticky;
   bottom: 0;
+}
+
+.quiz-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quiz-container {
+  background-color: lightsteelblue;
+  overflow: hidden;
+  width: 50vw;
+  max-width: 100vw;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+}
+
+.quiz-header {
+  padding: 4rem;
+}
+
+.quiz-main h2 {
+  margin: 0;
+  padding: 1px;
+  text-align: center;
+}
+
+.quiz-main ul {
+  list-style-type: none;
+}
+
+.quiz-main ul li {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.quiz-main ul li label {
+  cursor: pointer;
+}
+
+.quiz-button {
+  background-color: #333;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: #fff;
+  display: block;
+  font-family: inherit;
+  width: 100%;
+  padding: 1.3rem;
+  transition: all 0.1s ease-in;
+}
+
+.quiz-button:hover {
+  background-color: #555;
 }

@@ -1,5 +1,10 @@
 const quizData = [
   {
-    question: '',
+    question: 'Placeholder Question',
+    a: '*',
+    b: '/=',
+    c: '&&',
+    d: '%',
+    correct: 'd',
   },
 ];

@@ -1,11 +1,69 @@
 const quizData = [
   {
-    question: 'Placeholder Question',
-    a: '*',
-    b: '/=',
-    c: '&&',
-    d: '%',
+    question: 'What is Overproduction',
+    a: 'To produce sooner, faster, or in greater quantities than customer demands',
+    b: 'Demand is greater than supply',
+    c: 'To have more materials than needed',
+    d: 'To more waste than expected',
     correct: 'd',
+  },
+  {
+    question: 'What is inventory',
+    a: 'Jobsite',
+    b: 'Value-added product',
+    c: 'Processing beyond the standard required by the customer',
+    d: 'Raw material, work in process, or finished goods which is not having value added to it',
+  },
+  {
+    question:
+      'People or parts that wait for a work cycle to be completed are...',
+    a: 'Impatient',
+    b: 'Waiting',
+    c: 'Ambitious',
+    d: 'Defects',
+    correct: 'b',
+  },
+  {
+    question:
+      'Unnecessary movement of people, parts or machines within a process is called ...',
+    a: 'Motion',
+    b: 'Assembly',
+    c: 'Notion',
+    d: 'Conscription',
+    correct: 'a',
+  },
+  {
+    question:
+      'What is the unnecessary movement of people or parts BETWEEN processes',
+    a: 'Transmographication',
+    b: 'Assembly',
+    c: 'Transportation',
+    d: 'Unending Movement',
+    correct: 'c',
+  },
+  {
+    question: 'What are Defects',
+    a: 'Not right the first time. Repetition or correction of a process',
+    b: 'The process before metal is bent',
+    c: 'Moving too fast',
+    d: 'Moving too slow',
+    correct: 'a',
+  },
+  {
+    question: 'Processing beyond the standard required by the customer is ...',
+    a: 'Over Engineering',
+    b: 'Under Engineering',
+    c: 'Over Processing',
+    d: 'Under Processing',
+    correct: 'c',
+  },
+  {
+    question: 'According to the 8 Wastes, what is the definition of Talent',
+    a: 'Under-utilizing talents, skills and knowledge',
+    b: 'Over-utilizing talents, skills and knowledge',
+    c: 'Not utilizing talents, skills and knowledge',
+    d: 'Raw material',
+    correct: 'a',
   },
 ];
 

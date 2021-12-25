@@ -74,7 +74,39 @@
         </div>
       </div>
     </nav>
-    <main></main>
+
+    <!-- Flashcard -->
+    <main>
+      <!-- Flashcard -->
+      <section class="flashcard-container">
+        <div class="flashcard" id="card">
+          <div class="flashcard__inner">
+            <div class="flashcard__face flashcard__face--front">
+              <h2 id="term-front">Term</h2>
+            </div>
+            <div class="flashcard__face flashcard__face--back">
+              <div class="flashcard__content">
+                <div class="flashcard__header">
+                  <h2 id="term-back">Term</h2>
+                </div>
+                <div class="flashcard__body">
+                  <p id="definition">Definition</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn-group py-4">
+          <button class="btn btn-dark" id="previous-btn">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          <button class="btn btn-primary" id="next-btn">
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </section>
+    </main>
+
     <!-- Footer -->
     <footer class="text-center text-white bg-dark pb-2 pt-3">
       <!-- Grid container -->
@@ -94,4 +126,6 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"
   ></script>
+  <script src="./scripts/cardflip.js"></script>
+  <script src="./scripts/lean-cards.js"></script>
 </html>

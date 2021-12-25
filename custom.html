@@ -96,10 +96,10 @@
       </div>
     </header>
     <main>
-      <section class="flashcard-container">
-        <div class="flashcard" style="cursor: none">
-          <div class="flashcard__inner" style="cursor: auto">
-            <div class="flashcard__face flashcard__face--front">
+      <section class="custom-flashcard-container">
+        <div class="custom-flashcard" style="cursor: none">
+          <div class="custom-flashcard__inner" style="cursor: auto">
+            <div class="custom-flashcard__face custom-flashcard__face--front">
               <div style="display: flex; flex-direction: column">
                 <form action="">
                   <input
@@ -117,21 +117,17 @@
                 </form>
               </div>
             </div>
-            <!-- <div class="flashcard__face flashcard__face--back">
-              <div class="flashcard__content">
-                <div class="flashcard__header">
-                  <form action="">
-                    <input type="text" placeholder="Term" />
-                  </form>
-                </div>
-                <div class="flashcard__body">
-                  <form action="">
-                    <input type="text" placeholder="Definition" />
-                  </form>
-                </div>
-              </div>
-            </div> -->
           </div>
+          <button
+            class="quiz-button"
+            style="
+              border-radius: 0 0 15px 15px;
+              box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+            "
+            id="submit"
+          >
+            Submit
+          </button>
         </div>
       </section>
     </main>

@@ -176,7 +176,7 @@ footer {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   overflow: hidden;
-  border-radius: 16px;
+  border-radius: 16px 16px 0 0;
   box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
 }
 
@@ -220,17 +220,6 @@ footer {
   border-radius: 0px 0px 50% 0px;
 }
 
-.pp {
-  display: block;
-  width: 128px;
-  height: 128px;
-  margin: 0 auto 30px;
-  border-radius: 50%;
-  background-color: #fff;
-  border: 5px solid #fff;
-  object-fit: cover;
-}
-
 .flashcard__header h2 {
   color: #fff;
   font-size: 32px;
@@ -249,12 +238,63 @@ footer {
   line-height: 1.4;
 }
 
+/* Custom Flash Card - NO FLIP */
+
+.custom-flashcard-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-flashcard {
+  margin: 100px auto 0;
+  width: 400px;
+  height: 600px;
+  perspective: 1000px;
+}
+
+.custom-flashcard__inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}
+
+.custom-flashcard__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+  border-radius: 16px 16px 0 0;
+  box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+
+.custom-flashcard__face--front {
+  background-image: linear-gradient(to bottom right, #ffce00, #fe4880);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-flashcard__face--front h2 {
+  color: #fff;
+  font-size: 32px;
+}
+
 .card-input {
   border: none;
   border-radius: 5px;
   font-size: 1.5rem;
   margin-top: 3rem;
   margin-bottom: 3rem;
+  padding: 0.5rem;
+  box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
 }
 
 textarea:focus,

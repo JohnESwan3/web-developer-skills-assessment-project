@@ -1,63 +1,63 @@
-var contentArr = localStorage.getItem('items')
-  ? JSON.parse(localStorage.getItem('items'))
-  : [];
+const cardData = [];
 
-//   Event Listeners
-document.getElementById('save-card').addEventListener('click', () => {
-  addFlashcard();
+// Banner Event Listeners
+const showCardBox = document.getElementById('show-card-box');
+const deleCards = document.getElementById('delete-cards');
+
+// Input Event Listeners
+const termInput = document.getElementById('term-input');
+const definitionInput = document.getElementById('definition-input');
+const submitBtn = document.getElementById('submit');
+
+// Flashcard Event Listeners
+const flashcard = document.getElementById('card');
+const btnGroup = document.querySelector('.btn-group');
+const termFrontEl = document.getElementById('term-front');
+const termBackEl = document.getElementById('term-back');
+const definitionEl = document.getElementById('definition');
+const previousBtn = document.getElementById('previous-btn');
+const nextBtn = document.getElementById('next-btn');
+
+// Create Flash Card Functions
+
+// Flashcard Functions
+// Start array at beginning
+let currentCard = 0;
+
+loadCard();
+
+// Setup cards
+function loadCard() {
+  const currentCardData = cardData[currentCard];
+
+  termFrontEl.innerText = currentCardData.term;
+  termBackEl.innerText = currentCardData.term;
+  definitionEl.innerText = currentCardData.definition;
+}
+
+// Next button
+nextBtn.addEventListener('click', () => {
+  console.log('next');
+  currentCard++;
+  if (currentCard < cardData.length) {
+    loadCard();
+  } else {
+    flashcard.innerHTML = `
+      <div class="flashcard__inner">
+        <div class="flashcard__face flashcard__face--front">
+            <h2>You Finished!</h2>
+        </div>
+      </div>
+      `;
+    btnGroup.innerHTML = `
+        <button class="quiz-button" onclick="location.reload()">Restart</button>
+    `;
+  }
 });
 
-document.getElementById('delete-cards').addEventListener('click', () => {
-  localStorage.clear();
-  flashcards.innerHTML = '';
-  contentArr = [];
+// Previous button
+previousBtn.addEventListener('click', () => {
+  console.log('previous');
+  currentCard--;
+  loadCard();
 });
-
-document.getElementById('show-card-box').addEventListener('click', () => {
-  document.getElementById('create-card').style.display = 'block';
-});
-
-document.getElementById('close-card-box').addEventListener('click', () => {
-  document.getElementById('create-card').style.display = 'none';
-});
-
-flashcardMaker = (text) => {
-  const flashcard = document.createElement('div');
-  const question = document.createElement('h2');
-  const answer = document.createElement('h2');
-
-  flashcard.className = 'flashcard';
-
-  //   question.setAttribute('style',)
-  question.textContent = text.my_question;
-
-  answer.textContent = text.my_answer;
-
-  flashcard.appendChild(question);
-  flashcard.appendChild(answer);
-
-  flashcard.addEventListener('click', () => {
-    if (answer.style.display == 'none') answer.style.display = 'block';
-    else answer.style.display = 'none';
-  });
-
-  document.querySelector('#flashcards').appendChild(flashcard);
-};
-
-contentArr.forEach(flashcardMaker);
-
-addFlashcard = () => {
-  const question = document.querySelector('#question');
-  const answer = document.querySelector('#answer');
-
-  let flashcard_info = {
-    my_question: question.ariaValueMax,
-    my_answer: answer.value,
-  };
-
-  contentArr.push(flashcard_info);
-  localStorage.setItem('items', JSON.stringify(contentArr));
-  flashcardMaker(contentArr[contentArr.length - 1]);
-  question.value = '';
-  answer.value = '';
-};

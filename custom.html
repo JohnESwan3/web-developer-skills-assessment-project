@@ -96,7 +96,7 @@
       </div>
     </header>
     <main>
-      <section class="custom-flashcard-container">
+      <section class="custom-flashcard-container" style="margin-top: -4rem">
         <div class="custom-flashcard" style="cursor: none">
           <div class="custom-flashcard__inner" style="cursor: auto">
             <div class="custom-flashcard__face custom-flashcard__face--front">
@@ -106,6 +106,7 @@
                     class="card-input"
                     type="text"
                     placeholder="Enter A Term"
+                    id="term-input"
                   />
                 </form>
                 <form action="">
@@ -113,6 +114,7 @@
                     class="card-input"
                     type="text"
                     placeholder="Enter A Definition"
+                    id="definition-input"
                   />
                 </form>
               </div>
@@ -128,6 +130,54 @@
           >
             Submit
           </button>
+        </div>
+      </section>
+
+      <!-- Completed Flashcard -->
+      <section class="flashcard-container" style="height: 100vh">
+        <div class="flashcard" id="card">
+          <div class="flashcard__inner">
+            <div class="flashcard__face flashcard__face--front">
+              <h2 id="term-front">Term</h2>
+            </div>
+            <div class="flashcard__face flashcard__face--back">
+              <div class="flashcard__content">
+                <div class="flashcard__header">
+                  <h2 id="term-back">Term</h2>
+                </div>
+                <div class="flashcard__body">
+                  <p id="definition">Definition</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="display: flex; flex-direction: row">
+            <button
+              class="quiz-button"
+              style="
+                border-radius: 0 0 0 15px;
+                border-right: 1px solid;
+                box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+                width: 50%;
+              "
+              id="previous-btn"
+            >
+              <i class="fas fa-arrow-left"></i>
+            </button>
+            <button
+              class="quiz-button"
+              style="
+                border-radius: 0 0 15px 0;
+                border-left: 1px solid;
+                box-shadow: 0px 3-x 18px 3px rgba(0, 0, 0, 0.2);
+                width: 50%;
+                /* background-color: #fea048; */
+              "
+              id="next-btn"
+            >
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
         </div>
       </section>
     </main>

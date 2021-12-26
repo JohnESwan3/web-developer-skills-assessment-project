@@ -8,10 +8,9 @@ const previousBtn = document.getElementById('previous-btn');
 const nextBtn = document.getElementById('next-btn');
 
 // Take data from local storage
-let cardData = JSON.parse(localStorage.getItem('MyFlashcards'));
+let cardData = JSON.parse(localStorage.getItem('MyFlashcards')) ?? [];
 
-const addFlashCard = (ev) => {
-  ev.preventDefault(); // Stop form submitting
+const addFlashCard = () => {
   let card = {
     // id: Date.now(),
     term: document.getElementById('term-input').value,

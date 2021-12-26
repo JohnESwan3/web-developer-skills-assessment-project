@@ -10,11 +10,8 @@ const submitBtn = document.getElementById('submit');
 
 // Take data from local storage - put into array
 
-let quizData = JSON.parse(localStorage.getItem('MyQuiz'));
-
-const addQuiz = (ev) => {
-  ev.preventDefault();
-
+let quizData = JSON.parse(localStorage.getItem('MyQuiz')) ?? [];
+const addQuiz = () => {
   let quizForm = {
     question: document.getElementById('question-input').value,
     a: document.getElementById('a-input').value,

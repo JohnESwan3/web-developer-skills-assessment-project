@@ -229,7 +229,6 @@ const definitionEl = document.getElementById('definition');
 const previousBtn = document.getElementById('previous-btn');
 const nextBtn = document.getElementById('next-btn');
 
-// Start array at beginning
 let currentCard = 0;
 
 loadCard();

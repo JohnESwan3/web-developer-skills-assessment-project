@@ -95,42 +95,42 @@
         </button>
       </div>
     </header>
+
     <main>
+      <!-- Input Field to create custom flashcards -->
       <section class="custom-flashcard-container" style="margin-top: -4rem">
-        <div class="custom-flashcard" style="cursor: none">
-          <div class="custom-flashcard__inner" style="cursor: auto">
-            <div class="custom-flashcard__face custom-flashcard__face--front">
-              <div style="display: flex; flex-direction: column">
-                <form action="">
+        <form onsubmit="return createCustomCard()">
+          <div class="custom-flashcard" style="cursor: none">
+            <div class="custom-flashcard__inner" style="cursor: auto">
+              <div class="custom-flashcard__face custom-flashcard__face--front">
+                <div style="display: flex; flex-direction: column">
                   <input
                     class="card-input"
                     type="text"
                     placeholder="Enter A Term"
                     id="term-input"
                   />
-                </form>
-                <form action="">
                   <input
                     class="card-input"
                     type="text"
                     placeholder="Enter A Definition"
                     id="definition-input"
                   />
-                </form>
+                </div>
               </div>
             </div>
+            <input
+              type="submit"
+              value="Submit"
+              class="quiz-button"
+              style="
+                border-radius: 0 0 15px 15px;
+                box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+              "
+              id="submit"
+            />
           </div>
-          <button
-            class="quiz-button"
-            style="
-              border-radius: 0 0 15px 15px;
-              box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
-            "
-            id="submit"
-          >
-            Submit
-          </button>
-        </div>
+        </form>
       </section>
 
       <!-- Completed Flashcard -->
@@ -201,4 +201,5 @@
     crossorigin="anonymous"
   ></script>
   <script src="./scripts/custom-flashcards.js"></script>
+  <script src="./scripts/cardflip.js"></script>
 </html>

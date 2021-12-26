@@ -10,3 +10,5 @@ Webpage with
    B) Probably best to not have it on flashcards and quiz pages
 
 3. Quiz for each set of flash cards
+
+Removed Dictionary - Too much to get the project done

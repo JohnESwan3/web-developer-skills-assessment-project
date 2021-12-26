@@ -1,13 +1,4 @@
-// Banner Event Listeners
-const showCardBox = document.getElementById('show-card-box');
-const deleCards = document.getElementById('delete-cards');
-
-// // Input Event Listeners
-// const termInput = document.getElementById('term-input');
-// const definitionInput = document.getElementById('definition-input');
-// const submitBtn = document.getElementById('submit');
-
-// Flashcard Event Listeners
+// Flashcard Get Elements
 const flashcard = document.getElementById('card');
 const btnGroup = document.querySelector('.btn-group');
 const termFrontEl = document.getElementById('term-front');

@@ -74,31 +74,111 @@
         </div>
       </div>
     </nav>
-    <main class="quiz-main">
-      <div class="quiz-container" id="quiz">
-        <div class="quiz-header">
-          <h2 id="question">Question Text</h2>
-          <ul>
-            <li>
-              <input type="radio" id="a" name="answer" class="answer" />
-              <label for="a" id="a_text">Question</label>
-            </li>
-            <li>
-              <input type="radio" id="b" name="answer" class="answer" />
-              <label for="a" id="b_text">Question</label>
-            </li>
-            <li>
-              <input type="radio" id="c" name="answer" class="answer" />
-              <label for="a" id="c_text">Question</label>
-            </li>
-            <li>
-              <input type="radio" id="d" name="answer" class="answer" />
-              <label for="a" id="d_text">Question</label>
-            </li>
-          </ul>
+    <main class="quiz-main" style="display: flex; flex-direction: column">
+      <section class="custom-flashcard-container">
+        <div
+          class="quiz-container"
+          style="
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+          "
+        >
+          <form>
+            <div class="quiz-header">
+              <input
+                type="text"
+                for="question"
+                placeholder="Enter a question"
+                class="quiz-input"
+                style="width: 50%"
+                id="question-input"
+              />
+              <ul>
+                <li>
+                  <input
+                    type="text"
+                    for="answer-a"
+                    placeholder="Option A"
+                    class="quiz-input"
+                    style="width: 75%"
+                    id="a-input"
+                  />
+                </li>
+                <li>
+                  <input
+                    type="text"
+                    for="answer-b"
+                    placeholder="Option B"
+                    class="quiz-input"
+                    style="width: 75%"
+                    id="b-input"
+                  />
+                </li>
+                <li>
+                  <input
+                    type="text"
+                    for="answer-c"
+                    placeholder="Option C"
+                    class="quiz-input"
+                    style="width: 75%"
+                    id="c-input"
+                  />
+                </li>
+                <li>
+                  <input
+                    type="text"
+                    for="answer-d"
+                    placeholder="Option D"
+                    class="quiz-input"
+                    style="width: 75%"
+                    id="d-input"
+                  />
+                </li>
+                <li>
+                  <select class="quiz-input" id="correct-input">
+                    <option value="">Choose the Correct Answer</option>
+                    <option value="a">a</option>
+                    <option value="b">b</option>
+                    <option value="c">c</option>
+                    <option value="d">d</option>
+                  </select>
+                </li>
+              </ul>
+            </div>
+            <button class="quiz-button" id="submitForm">Submit Quiz</button>
+          </form>
         </div>
-        <button class="quiz-button" id="submit">Submit</button>
-      </div>
+      </section>
+
+      <!-- Quiz - To be filled in with user questions and answers -->
+      <section class="custom-flashcard-container">
+        <div class="quiz-container" id="quiz">
+          <div class="quiz-header">
+            <h2 id="question">Question Text</h2>
+            <ul>
+              <li>
+                <input type="radio" id="a" name="answer" class="answer" />
+                <label for="a" id="a_text">Question</label>
+              </li>
+              <li>
+                <input type="radio" id="b" name="answer" class="answer" />
+                <label for="a" id="b_text">Question</label>
+              </li>
+              <li>
+                <input type="radio" id="c" name="answer" class="answer" />
+                <label for="a" id="c_text">Question</label>
+              </li>
+              <li>
+                <input type="radio" id="d" name="answer" class="answer" />
+                <label for="a" id="d_text">Question</label>
+              </li>
+            </ul>
+          </div>
+          <button class="quiz-button" id="submit">Submit</button>
+        </div>
+      </section>
     </main>
     <!-- Footer -->
     <footer class="text-center text-white bg-dark pb-2 pt-3">

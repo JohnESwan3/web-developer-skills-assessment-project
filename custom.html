@@ -99,7 +99,7 @@
     <main>
       <!-- Input Field to create custom flashcards -->
       <section class="custom-flashcard-container" style="margin-top: -4rem">
-        <form onsubmit="return createCustomCard()">
+        <form>
           <div class="custom-flashcard" style="cursor: none">
             <div class="custom-flashcard__inner" style="cursor: auto">
               <div class="custom-flashcard__face custom-flashcard__face--front">
@@ -107,28 +107,30 @@
                   <input
                     class="card-input"
                     type="text"
+                    for="term"
                     placeholder="Enter A Term"
                     id="term-input"
                   />
                   <input
                     class="card-input"
                     type="text"
+                    for="definition"
                     placeholder="Enter A Definition"
                     id="definition-input"
                   />
                 </div>
               </div>
             </div>
-            <input
-              type="submit"
-              value="Submit"
+            <button
               class="quiz-button"
               style="
                 border-radius: 0 0 15px 15px;
                 box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
               "
               id="submit"
-            />
+            >
+              Submit
+            </button>
           </div>
         </form>
       </section>
@@ -151,7 +153,7 @@
               </div>
             </div>
           </div>
-          <div style="display: flex; flex-direction: row">
+          <div class="btn-group" style="display: flex; flex-direction: row">
             <button
               class="quiz-button"
               style="

@@ -70,13 +70,13 @@ nextBtn.addEventListener('click', () => {
     flashcard.innerHTML = `
       <div class="flashcard__inner">
         <div class="flashcard__face flashcard__face--front">
-            <h2>You Finished!</h2>
+        <div style="flex-direction: column">
+        <h2>You Finished!</h2>
+        <button class="quiz-button" style="border-radius: 16px" onclick="location.reload()">Restart</button>
+        </div>
         </div>
       </div>
       `;
-    btnGroup.innerHTML = `
-        <button class="quiz-button" onclick="location.reload()">Restart</button>
-    `;
   }
 });
 

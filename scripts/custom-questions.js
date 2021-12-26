@@ -83,13 +83,17 @@ submitBtn.addEventListener('click', () => {
       score++;
     }
 
+    // Convert Score to Percentage
+    const scorePercent = Math.floor((score / quizData.length) * 100);
+    console.log(scorePercent);
+
     currentQuiz++;
     if (currentQuiz < quizData.length) {
       loadQuiz();
     } else {
       quiz.innerHTML = `
       <div class="quiz-header"
-      <h2>You answered ${score}/${quizData.length} questions correctly</h2>
+      <h2>You answered ${scorePercent}% of the questions correctly</h2> 
       </div>
       <button class="quiz-button" onclick="location.reload()">Reload</button>`;
     }

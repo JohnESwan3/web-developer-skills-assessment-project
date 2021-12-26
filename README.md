@@ -12,3 +12,5 @@ Webpage with
 3. Quiz for each set of flash cards
 
 Removed Dictionary - Too much to get the project done
+
+This is not mobile responsive

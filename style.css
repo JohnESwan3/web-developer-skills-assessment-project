@@ -193,6 +193,7 @@ footer {
 .flashcard__face--front h2 {
   color: #fff;
   font-size: 32px;
+  padding: 4rem;
 }
 
 .flashcard__face--back {
@@ -288,6 +289,7 @@ footer {
 .custom-flashcard__face--front h2 {
   color: #fff;
   font-size: 32px;
+  padding: 4rem;
 }
 
 .card-input {
